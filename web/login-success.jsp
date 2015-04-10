@@ -12,9 +12,25 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-        <title>JSP Page</title>
+        <title>Go Shopping !</title>
     </head>
     <body>
-        <h1>Login Success</h1>
+        <form method="post">
+        <ul>
+            <li><a href="add.jsp?name=Tivi">Tivi</a></li>
+            <li><a href="add.jsp?name=Tủ lạnh">Tủ lạnh</a></li>
+            <li><a href="add.jsp?name=Máy giặt">Máy giặt</a></li>
+            <li><a href="add.jsp?name=Điện thoại">Điện thoại</a></li>
+            <li><a href="add.jsp?name=Điều Hòa">Điều Hòa</a></li>
+            <li><a href="add.jsp?name=Lap top">Lap top</a></li>
+            <li><a href="add.jsp?name=Bếp ga">Bếp ga</a></li>
+            <li><a href="add.jsp?name=Máy in">Máy in</a></li>
+            <li><a href="add.jsp?name=Ipad">Ipad</a></li>
+            <li><a href="add.jsp?name=Iphone">Iphone</a></li>
+            <li><a href="add.jsp?name=Samsung Galaxy">Samsung Galaxy</a></li>
+            <li><a href="add.jsp?name=LG">LG</a></li>
+        </ul>
+            </form>
+        <jsp:include page="Logout.jsp"/>
     </body>
 </html>

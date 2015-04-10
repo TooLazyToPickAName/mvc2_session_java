@@ -13,12 +13,32 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
         <title>JSP Page</title>
+        <style>
+            div{
+                margin: 0px 0px 10px 10px;
+            }
+            label{
+                float:left;
+                height:30px;
+                width:100px;
+            }
+        </style>
     </head>
     <body>
-        <form action="login" method="post">  
-            Name:<input type="text" name="name"><br>  
-            Password:<input type="password" name="password"><br>  
-            <input type="submit" value="login">  
-        </form> 
+        
+            <form action="login" method="post">
+                <fieldset>
+                    <div>
+                        <label>UserName</label>
+                        <input type="text" name="name"/>
+                    </div>
+                    <div>
+                        <label>Password</label>
+                        <input type="password" name="password"/>
+                    </div>
+                        <label></label>
+                        <div><input type="submit" name="submit" value="Login"/></div>
+                </fieldset>
+            </form> 
     </body>
 </html>
