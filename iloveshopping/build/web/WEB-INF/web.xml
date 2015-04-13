@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
+    <servlet>
+        <servlet-name>MainController</servlet-name>
+        <servlet-class>com.katamvc.controllers.MainController</servlet-class>
+        <init-param>
+            <param-name>getUser</param-name>
+            <param-value>com.iloveshopping.controllers.UserController</param-value>
+        </init-param>
+        <init-param>
+            <param-name>login</param-name>
+            <param-value>com.iloveshopping.controllers.LoginController</param-value>
+        </init-param>
+        <init-param>
+            <param-name>loadHome</param-name>
+            <param-value>com.iloveshopping.controllers.HomeController</param-value>
+        </init-param>
+        <init-param>
+            <param-name>logout</param-name>
+            <param-value>com.iloveshopping.controllers.LogoutController</param-value>
+        </init-param>
+        <init-param>
+            <param-name>getDetailProduct</param-name>
+            <param-value>com.iloveshopping.controllers.DetailProductController</param-value>
+        </init-param>
+        <init-param>
+            <param-name>getProductsByCategory</param-name>
+            <param-value>com.iloveshopping.controllers.ProductsByCatoryController</param-value>
+        </init-param>
+        <init-param>
+            <param-name>addCart</param-name>
+            <param-value>com.iloveshopping.controllers.AddToCartController</param-value>
+        </init-param>
+        <init-param>
+            <param-name>search</param-name>
+            <param-value>com.iloveshopping.controllers.SearchProductController</param-value>
+        </init-param>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>MainController</servlet-name>
+        <url-pattern>*.action</url-pattern>
+    </servlet-mapping>
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+    <error-page>
+        <error-code>404</error-code>
+        <location>/error404.jsp</location>
+    </error-page>
+</web-app>
+                        
