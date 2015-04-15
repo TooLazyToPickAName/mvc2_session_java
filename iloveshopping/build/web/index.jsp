@@ -1,0 +1,1 @@
+<jsp:forward page="loadHome.action"></jsp:forward>
